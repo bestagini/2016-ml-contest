@@ -1,5 +1,22 @@
 # 2016-ml-contest
 
+## THE CONTEST IS NOW CLOSED. THANK YOU TO EVERYONE THAT PARTICIPATED.
+
+## Final standings: congratulations to LA_Team!
+
+The top teams, based on the median F1-micro score from 100 realizations of their models were:
+
+| Position | Team                                          | F1         | Algorithm     | Language | Solution                 |
+|----------|-----------------------------------------------|:----------:|---------------|----------|--------------------------|
+|    1     | LA_Team (Mosser, de la Fuente)                | **0.6388** | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05_VALIDATION.ipynb) |
+|    2     | PA Team ([PetroAnalytix](http://petroanalytix.com/)) | **0.6250** | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB_VALIDATION.ipynb) |
+|    3     | ispl (Bestagini, Tuparo, Lipari)              | **0.6231** | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03_v2_VALIDATION.ipynb) |
+|    4     | [esaTeam](https://github.com/esa-as)  ([Earth Analytics](http://www.earthanalytics.no/index.html)) | **0.6225** | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01_VALIDATION.ipynb) |
+
+I have stochastic scores for other teams, and will continue to work through them, but it seems unlikely that these top teams will change at this point. 
+
+<hr />
+
 Welcome to the *Geophysical Tutorial* Machine Learning Contest 2016! Read all about the contest in [the October 2016 issue](http://library.seg.org/toc/leedff/35/10) of the magazine. Look for Brendon Hall's tutorial on lithology prediction with machine learning.
 
 **You can run the notebooks in this repo in the cloud, just click the badge below:**
@@ -16,21 +33,22 @@ You can also clone or download this repo with the green button above, or just re
 
 F1 scores of models against secret blind data in the STUART and CRAWFORD wells. The logs for those wells are available [in the repo](https://github.com/seg/2016-ml-contest/blob/master/validation_data_nofacies.csv), but contestants do not have access to the facies.
 
-**Please note that after the contest closes, we will be applying a stochastic scoring approach to the leading models. So these scores are subject to change.**
+** These are deterministic scores, the final standings depend on stochastic scores — see above **
 
 | Team                                          | F1         | Algorithm     | Language | Solution                 |
 |-----------------------------------------------|:----------:|---------------|----------|--------------------------|
-| LA_Team                                       | **0.641**  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
+| LA_Team (Mosser, de la Fuente)                | **0.641**  | Boosted trees | Python   | [Notebook](LA_Team/Facies_classification_LA_TEAM_05.ipynb) |
+| ispl (Bestagini, Tuparo, Lipari)              | **0.640**  | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03_v2.ipynb) |
 | SHandPR                                       | **0.631**  | Boosted trees | Python   | [Notebook](SHandPR/Face_classification_SHPR_GradientBoost.ipynb) |
-| [bestagini](https://github.com/bestagini)     | **0.631**  | Boosted trees | Python   | [Notebook](ispl/facies_classification_try03.ipynb) |
 | HouMath                                       | **0.630**  | Boosted trees | Python   | [Notebook](HouMath/Face_classification_HouMath_XGB_06.ipynb) |
-| [esaTeam](https://github.com/esa-as)          | **0.626**  | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01.ipynb) |
+| [esaTeam](https://github.com/esa-as)          | **0.629**  | Boosted trees | Python   | [Notebook](esaTeam/esa_Submission01.ipynb) |
 | Pet_Stromatolite                              | **0.625**  | Boosted trees | Python   | [Notebook](Pet_Stromatolite/Facies_Classification_Draft7.ipynb) |
 | PA Team                                       | **0.623**  | Boosted trees | Python   | [Notebook](PA_Team/PA_Team_Submission_8_XGB.ipynb) |
+| CC_ml                                         | **0.619**  | Boosted trees | Python   | [Notebook](CC_ml/cc_submission1_no_neigh_Boosting_refine4.ipynb) |
+| geoLEARN                                      | **0.613**  | Random forest | Python   | [Notebook](geoLEARN/Submission_4_OVR_RF.ipynb) |
 | [ar4](https://github.com/ar4)                 | **0.606**  | Random forest | Python   | [Notebook](ar4/ar4_submission2.ipynb) |
 | [Houston_J](https://github.com/Houston_J)     | **0.600**  | Boosted trees | Python   | [Notebook](Houston_J/Houston_J-sub2.ipynb) |
 | Bird Team                                     | **0.598**  | Random forest | Python   | [Notebook](Bird_Team/Facies_classification_4.ipynb) |
-| geoLEARN                                      | **0.594**  | Random forest | Python   | [Notebook](geoLEARN/Submission_3_RF_FE.ipynb) |
 | [gccrowther](https://github.com/gccrowther)   | **0.589**  | Random forest | Python   | [Notebook](GCC_FaciesClassification/05%20-%20Facies%20Determination.ipynb) |
 | [thanish](https://github.com/thanish)         | **0.580**  | Random forest | R        | [Code](Mendacium/Mendacium/rf_sub_10.R) |
 | MandMs                                        | **0.579**  | Majority voting | Python | [Notebook](MandMs/02_Facies_classification-MandMs_plurality_voting_classifier.ipynb) |
@@ -40,20 +58,23 @@ F1 scores of models against secret blind data in the STUART and CRAWFORD wells. 
 | [ShiangYong](https://github.com/ShiangYong)   | **0.570**  | ConvNet          | Python   | [Notebook](ShiangYong/facies_classification_cnn.ipynb) |
 | CarlosFuerte                                  | **0.570**  | Multilayer perceptron | Python      | [Notebook](CarlosFuerte/ML_Submission.ipynb) |
 | [fvf1361](https://github.com/fvf1361)         | **0.568**  | Majority voting | Python   | [Notebook](fvf/facies_classification.ipynb) |
+| [CarthyCraft](https://github.com/CarthyCraft) | **0.566**  | Boosted trees | Python | [Notebook](ADMC/McCarthy%202016%20ML%20v17.ipynb)|
 | [gganssle](https://github.com/gganssle)       | **0.561**  | Deep neural net | Lua      | [Notebook](gram/faye.ipynb) |
-| [CarthyCraft](https://github.com/CarthyCraft) | **0.561**  | Boosted trees | Python | No code yet |
 | StoDIG                                        | **0.561**  | ConvNet              | Python   | [Notebook](StoDIG/Facies_classification_StoDIG_4.ipynb) |
 | [wouterk1MSS](https://github.com/wouterk1MSS) | **0.559**  | Random forest | Python   | [Notebook](MSS_Xmas_Trees/ml_seg_try1.ipynb) |
+| [Anjum48](https://github.com/Anjum48)         | **0.559**  | Majority voting | Python   | [Notebook](Anjum48/Anjum48%20Facies%20Classification%20v2.ipynb) |
+| itwm                                          | **0.557**  | ConvNet | Python   | [Notebook](itwm/Facies_classification_ITWM_01.ipynb) |
+| [JJlowe](https://github.com/JJlowe)           | **0.556**  | Deep neural network | Python   | [Notebook](JLOWE/JLowe_NN.ipynb) |
+| [adatum](https://github.com/adatum)           | **0.552**  | Majority voting | R   | [Notebook](adatum/well-partitioned/Facies_classification.Rmd) |
 | [CEsprey](https://github.com/CEsprey)         | **0.550**  | Majority voting | Python | [Notebook](CEsprey%20-%20RandomForest/Facies_Tree_Ensemble_Classifier.ipynb) |
 | [osorensen](https://github.com/osorensen)     | **0.549**  | Boosted trees | R        | [Notebook](boostedXmas/Facies%20Classification.ipynb) |
 | [rkappius](https://github.com/rkappius)       | **0.534**  | Neural network           | Python   | [Notebook](rkappius/facies_w_tf_submit.py) |
 | [JesperDramsch](https://github.com/JesperDramsch) | **0.530**  | Random forest | Python   | [Notebook](JesperDramsch/Facies_classification_Xmas_Trees-Copy1.ipynb) |
+| [cako](https://github.com/cako)               | **0.522**  | Multi-layer perceptron  | Python   | [Notebook](DiscerningHaggis/Discerning_Haggis_Facies_Classification_sub3.ipynb) |
 | BGC_Team                                      | **0.519**  | Deep neural network  | Python   | [Notebook](BGC_Team/Facies%20Prediction_submit.ipynb) |
-| [adatum](https://github.com/adatum)           | **0.514**  | k-nearest neighbours | R   | [Notebook](adatum/unimputed/Facies_classification.Rmd) |
 | [CannedGeo](https://github.com/cannedgeo)     | **0.512**  | Support vector machine | Python   | [Notebook](CannedGeo_/Facies_classification-BPage_CannedGeo_F1_56-VALIDATED.ipynb) |
 | ARANZGeo                                      | **0.511**  | Deep nerual network  | Python   | [Code](ARANZGeo/hypter.py) |
 | [daghra](https://github.com/dagrha)           | **0.506**  | k-nearest neighbours  | Python   | [Notebook](dagrha/KNN_submission_1_dagrha.ipynb) |
-| [cako](https://github.com/cako)               | **0.505**  | Multi-layer perceptron  | Python   | [Notebook](DiscerningHaggis/Discerning_Haggis_Facies_Classification.ipynb) |
 | [BrendonHall](https://github.com/brendonhall) | **0.427**  | Support vector machine | Python   | Initial score in article |
 
 
